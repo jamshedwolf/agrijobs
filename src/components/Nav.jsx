@@ -33,7 +33,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav className="">
+    <nav className="border-b border-gray-300 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -88,9 +88,12 @@ export default function Nav() {
               <Globe className="h-4 w-4" />
               <span className="ml-1 text-sm font-medium">EN</span>
             </div>
-            <button className="bg-[#7B91B7] hover:bg-[#7B91B7] text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-              Login / Register
-            </button>
+            <Link to="./login">
+             <button className="bg-[#7B91B7] hover:bg-[#7B91B7]/90 w-full text-white p-4 rounded-md text-sm font-medium transition-colors duration-200">
+                Login / Register
+              </button>
+             
+             </Link>
           </div>
 
           {/* Mobile buttons */}
@@ -159,9 +162,12 @@ export default function Nav() {
                 <Globe className="h-4 w-4 text-black" />
                 <span className="ml-1 text-sm font-medium">EN</span>
               </div>
-              <button className="bg-[#7B91B7] hover:bg-blue-600 w-full text-white p-4 rounded-md text-sm font-medium transition-colors duration-200">
+             <Link to="./login">
+             <button className="bg-[#7B91B7] hover:bg-[#7B91B7]/90 w-full text-white p-4 rounded-md text-sm font-medium transition-colors duration-200">
                 Login / Register
               </button>
+             
+             </Link>
             </div>
           </div>
         </div>

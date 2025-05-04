@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const handleSearch = (e) => {
@@ -61,12 +62,14 @@ const Hero = () => {
               
             </div>
 
-            <button 
+           <Link to="jobs" >
+           <button 
               type="submit"
-              className="bg-[#7B91B7]  hover:bg-[#7B91B7]/90 text-white px-6 py-3 font-medium transition-colors duration-200 md:w-auto w-full"
+              className="bg-[#7B91B7] h-full  hover:bg-[#7B91B7]/90 text-white px-6 py-3 font-medium transition-colors duration-200 md:w-auto w-full"
             >
               Search Jobs
             </button>
+           </Link>
           </form>
         </div>
 
